@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LeetCode Stats Tracker</title>
+</head>
+<link rel="stylesheet" href="feed.css">
+<script src="feed.js"></script>
+<body>
+
+    <header>
+        <h1>LeetStats Tracker</h1>
+        <p>Enter your username to see your coding progress...</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <label for="username">LeetCode Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Your User Name">
+        <button type="button" id="searchbtn" >Get Stats</button>
+    </section>
+
+    <br>
+
+    <section id="results">
+        <h2>User Profile</h2>
+        
+        <div>
+            <p><strong>Username:</strong> <span id="display-name">...</span></p>
+            <p><strong>Global Rank:</strong> <span id="user-rank">...</span></p>
+        </div>
+
+        <h3>Problems Solving Stats</h3>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Difficulty</th>
+                    <th>Solved</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Easy</td>
+                    <td id="easy-solved">-</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td id="medium-solved">-</td>
+                </tr>
+                <tr>
+                    <td>Hard</td>
+                    <td id="hard-solved">--</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="total-solved"><strong>--</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>By PAXTON</p>
+    </footer>
+
+</body>
+</html>
